@@ -1,4 +1,4 @@
-name: CI
+name: CI/CD
 
 on:
   push:
@@ -24,3 +24,14 @@ jobs:
         
       - name: Run tests
         run: npm test
+  CD:
+    needs: CI
+    name: Continuous Deployment
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Deploy
+        run: echo "Deploying..."
