@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "cicd-study",
-    "slug": "cicd-study",
+    "slug": "cicdstudy",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,6 +20,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "16e2bc6e-ef92-4ba2-b310-5f04cc7d4312"
+      }
+    },
+    "owner": "danielzordan"
   }
 }
